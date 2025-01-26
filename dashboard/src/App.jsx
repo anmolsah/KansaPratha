@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { useState } from "react";
+import Router from "./router/Router";
 
 const App = () => {
-  return (
-    <div className='text-3xl text-red-500 font-bold text-center underline'>hello world</div>
-  )
-}
+  const [allRoutes, setAllRoutes] = useState([]);
+  return <Router allRoutes={allRoutes} />;
+};
 
-export default App
+export default App;
